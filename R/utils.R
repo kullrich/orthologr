@@ -3,7 +3,7 @@ test <- function(x){ print(paste0("Test ",x," passed.","\n"))}
 
 is.dnaSequence <- function(seq){
         
-        return((length(grep("[^(A|C|G|T|a|c|g|t)]", seq)) == 0))
+        return((length(grep("[^(A|C|G|T|M|R|W|S|Y|K|V|H|D|B|N|a|c|g|t|m|r|w|s|y|k|v|h|d|b|n)]", seq)) == 0))
 }
 
 
